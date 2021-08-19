@@ -41,11 +41,6 @@ code {
   }
 }
 
-@media (min-width:2001px) {
-  .movies-list, .github-logo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap:12px;
-     padding-left:50px;
-  }
+.text-center{
+  margin-top: 50px !important;
 }

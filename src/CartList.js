@@ -41,12 +41,13 @@ function CartList() {
         {prod.cartItems.length === 0 ? (
           <h2>Your Cart is Empty</h2>
         ) : (
+          <div className="cart-details">
           <h2>
             Total : Rs{" "}
             {prod.cartItems
               .map((e) => e.qty * e.price)
               .reduce((a, b) => a + b)}
-          </h2>
+          </h2></div>
         )}
         <div className="cart-List">
           {
@@ -72,7 +73,7 @@ function CartList() {
                         -
                       </button>
                     </span>
-                    <span className="badge bg-primary rounded-pill">
+                    <span className="badge bg-secondary ">
                       Quantity: {el.qty}
                     </span>
                     <span>
