@@ -16,6 +16,7 @@ function ProductCard(props) {
               RS : {props.data.price}
           </div>
         </div>
+        
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div className="text-center">
             <button
